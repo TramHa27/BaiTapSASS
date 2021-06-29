@@ -1,0 +1,234 @@
+//Color
+$color-pink: #b21980;
+$color-orange-400: #fa793e;
+$color-orange-300: #ffd2bd;
+$color-orange-200: #fee0d2;
+$color-orange-100: #feebe2;
+$color-black-200: #181818;
+$color-gray: #707070;
+$color-gray-100: #777679;
+$color-black-100: #060606;
+$color-bg-light: #fbfbfb;
+
+//Font-size
+$fs-1: 0.8rem;
+$fs-2: 1.1rem;
+$fs-3: 1.25rem;
+$fs-4: 1.7rem;
+$fs-5: 2rem;
+$fs-6: 3.8rem;
+$fs-7: 4rem;
+$fs-8: 5rem;
+
+//Font-weight
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+
+//Spacing
+$spacing-1: 0.25rem;
+$spacing-2: 0.5rem;
+$spacing-3: 0.75rem;
+$spacing-4: 1rem;
+$spacing-5: 1.25rem;
+$spacing-6: 1.5rem;
+$spacing-7: 1.75rem;
+$spacing-8: 2.5rem;
+$spacing-9: 3rem;
+$spacing-10: 4rem;
+$spacing-11: 5rem;
+$spacing-12: 6rem;
+
+@mixin buttonClick($color, $spacing) {
+  color: #fff;
+  border: 1px solid $color;
+  border-radius: 4rem;
+  font-weight: $font-semibold;
+  padding: 0.8rem $spacing;
+  background-color: $color;
+}
+
+.header {
+  background-image: url(../../images/yellow_top_wave_01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  background-color: #ffffff;
+  height: 90px;
+  align-items: center;
+  display: flex;
+  .container {
+    max-width: 78.75rem;
+    margin: 0 auto;
+    .nav-brand img {
+      width: 5rem;
+      height: auto;
+    }
+    .nav-tabs {
+      list-style: none;
+      border-bottom: none;
+    }
+    .nav-item a {
+      padding: 0 3.125rem 0 0;
+      border: none;
+      text-decoration: none;
+      color: $color-black-200;
+      font-weight: $font-medium;
+      &:hover {
+        color: $color-pink;
+      }
+    }
+    .nav__right {
+      display: flex;
+      align-items: center;
+      .form-inline button {
+        border-radius: 5rem;
+        border: 1px solid $color-pink;
+        color: $color-pink;
+        &:hover {
+          background-color: $color-pink;
+          color: #fff;
+        }
+      }
+      .nav__social i {
+        font-size: $fs-1;
+        &:hover {
+          color: $color-pink;
+        }
+      }
+    }
+  }
+}
+
+.carousel {
+  &-about {
+    p {
+      color: $color-pink;
+      font-size: $fs-2;
+      font-weight: $font-semibold;
+    }
+    h1 {
+      font-weight: $font-bold;
+      font-size: $fs-6;
+    }
+  }
+}
+
+.team {
+  background-image: url(../images/Violet_top_left_wave.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-item {
+    border-radius: 0.5rem;
+
+    .team-item__content-table {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 0.5rem;
+      transition: all 0.3s linear;
+
+      &:hover {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        transition: all 0.3s linear;
+      }
+
+      .team-item__img {
+        img {
+          border-top-left-radius: 0.5rem;
+          border-top-right-radius: 0.5rem;
+          max-width: 100%;
+        }
+      }
+
+      .team-item__content {
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        background-color: #fff;
+
+        span {
+          color: $color-pink;
+          font-size: $fs-2;
+          font-weight: $font-semibold;
+        }
+
+        h3 {
+          font-weight: $font-semibold;
+        }
+      }
+    }
+  }
+}
+
+.course {
+  background-image: url(../images/accent_bottom_wave_01.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  &-img {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &-form {
+    background-color: #fff;
+
+    height: 100%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 0.5rem;
+
+    form {
+      h1 {
+        text-align: center;
+      }
+      button {
+        @include buttonClick($color-pink, $spacing-10);
+        &:hover {
+          background-color: #fff;
+          color: $color-pink;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-image: url(../../images/footer_background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-list {
+      color: #fff;
+      &__item.item2,
+      &__item.item3 {
+          p {
+              border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+          }
+      }
+      &__item.item4 {
+          input {
+              border-radius: 5rem;
+              height: 3rem;
+              text-align: center;
+          }
+          button {
+              @include buttonClick($color-pink,$spacing-11 );
+              &:hover{
+                  color: rgba(0, 0, 0, 0.685);
+                  background-color: #fff
+              }
+          }
+      }
+  }
+}

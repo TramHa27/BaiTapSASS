@@ -1,0 +1,8 @@
+@mixin buttonClick($color, $spacing) {
+    color: #fff;
+    border: 1px solid $color;
+    border-radius: 4rem;
+    font-weight: $font-semibold;
+    padding: 0.8rem $spacing;
+    background-color: $color;
+}

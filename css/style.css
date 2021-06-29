@@ -1,0 +1,208 @@
+.header {
+  background-image: url(../../images/yellow_top_wave_01.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: #ffffff;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .container {
+  max-width: 78.75rem;
+  margin: 0 auto;
+}
+
+.header .container .nav-brand img {
+  width: 5rem;
+  height: auto;
+}
+
+.header .container .nav-tabs {
+  list-style: none;
+  border-bottom: none;
+}
+
+.header .container .nav-item a {
+  padding: 0 3.125rem 0 0;
+  border: none;
+  text-decoration: none;
+  color: #181818;
+  font-weight: 500;
+}
+
+.header .container .nav-item a:hover {
+  color: #b21980;
+}
+
+.header .container .nav__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container .nav__right .form-inline button {
+  border-radius: 5rem;
+  border: 1px solid #b21980;
+  color: #b21980;
+}
+
+.header .container .nav__right .form-inline button:hover {
+  background-color: #b21980;
+  color: #fff;
+}
+
+.header .container .nav__right .nav__social i {
+  font-size: 0.8rem;
+}
+
+.header .container .nav__right .nav__social i:hover {
+  color: #b21980;
+}
+
+.carousel-about p {
+  color: #b21980;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.carousel-about h1 {
+  font-weight: 700;
+  font-size: 3.8rem;
+}
+
+.team {
+  background-image: url(../images/Violet_top_left_wave.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-item {
+  border-radius: 0.5rem;
+}
+
+.team-item .team-item__content-table {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.team-item .team-item__content-table:hover {
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.team-item .team-item__content-table .team-item__img img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  max-width: 100%;
+}
+
+.team-item .team-item__content-table .team-item__content {
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: #fff;
+}
+
+.team-item .team-item__content-table .team-item__content span {
+  color: #b21980;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.team-item .team-item__content-table .team-item__content h3 {
+  font-weight: 600;
+}
+
+.course {
+  background-image: url(../images/accent_bottom_wave_01.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.course-img img {
+  max-width: 100%;
+}
+
+.course-form {
+  background-color: #fff;
+  height: 100%;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0.5rem;
+}
+
+.course-form form h1 {
+  text-align: center;
+}
+
+.course-form form button {
+  color: #fff;
+  border: 1px solid #b21980;
+  border-radius: 4rem;
+  font-weight: 600;
+  padding: 0.8rem 4rem;
+  background-color: #b21980;
+}
+
+.course-form form button:hover {
+  background-color: #fff;
+  color: #b21980;
+}
+
+.footer {
+  background-image: url(../../images/footer_background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-list {
+  color: #fff;
+}
+
+.footer-list__item.item2 p, .footer-list__item.item3 p {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.footer-list__item.item4 input {
+  border-radius: 5rem;
+  height: 3rem;
+  text-align: center;
+}
+
+.footer-list__item.item4 button {
+  color: #fff;
+  border: 1px solid #b21980;
+  border-radius: 4rem;
+  font-weight: 600;
+  padding: 0.8rem 5rem;
+  background-color: #b21980;
+}
+
+.footer-list__item.item4 button:hover {
+  color: rgba(0, 0, 0, 0.685);
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
