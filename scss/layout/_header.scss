@@ -1,2 +1,59 @@
-
+.header {
+    background-image: url(../../images/yellow_top_wave_01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    background-color: #ffffff;
+    height: 90px;
+    align-items: center;
+    display: flex;
+    .container {
+      max-width: 78.75rem;
+      margin: 0 auto;
+      .nav-brand img {
+        width: 5rem;
+        height: auto;
+      }
+      .nav-tabs {
+        list-style: none;
+        border-bottom: none;
+      }
+      .nav-item a {
+        padding: 0 3.125rem 0 0;
+        border: none;
+        text-decoration: none;
+        color: $color-black-200;
+        font-weight: $font-medium;
+        &:hover {
+          color: $color-pink;
+        }
+      }
+      .nav__right {
+        display: flex;
+        align-items: center;
+        .form-inline button {
+          border-radius: 5rem;
+          border: 1px solid $color-pink;
+          color: $color-pink;
+          &:hover {
+            background-color: $color-pink;
+            color: #fff;
+          }
+        }
+        .nav__social i {
+          font-size: $fs-1;
+          &:hover {
+            color: $color-pink;
+          }
+        }
+      }
+    }
+  }
+  
   

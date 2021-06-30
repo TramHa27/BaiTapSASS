@@ -1,0 +1,13 @@
+.carousel {
+    &-about {
+      p {
+        color: $color-pink;
+        font-size: $fs-2;
+        font-weight: $font-semibold;
+      }
+      h1 {
+        font-weight: $font-bold;
+        font-size: $fs-6;
+      }
+    }
+  }
